@@ -314,7 +314,7 @@
 }
 
 .gameplay .left .multiplier p {
-    color: aquamarine;
+    color: var(--primary-lighter);
 }
 
 .multiplier-reset {
@@ -355,7 +355,7 @@
 }
 
 .gameplay .right .score p {
-    color: aquamarine;
+    color: var(--primary-lighter);
 }
 
 .gameplay .right .score .word-score {
