@@ -450,10 +450,6 @@ function Gameplay() {
         return () => window.removeEventListener('keydown', keyHandler);
       }, [gameStarted]);
 
-
-    /* ----------------------- */
-    /* -- END GAME PROPERLY -- */
-    /* ----------------------- */
     const fadeOutAudio = (waveSurfer, duration = 2000) => {
         const fadeOutInterval = 50;
         const steps = duration / fadeOutInterval;
