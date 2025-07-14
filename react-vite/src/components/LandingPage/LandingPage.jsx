@@ -1,6 +1,9 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import Particles from '../Particles/Particles';
+import OpenModalButton from "../OpenModalButton";
+import SignupFormModal from "../SignupFormModal";
+import LoginFormModal from "../LoginFormModal";
 import './LandingPage.css';
 
 function LandingPage() {
@@ -11,7 +14,7 @@ function LandingPage() {
     laneRefs.current.forEach((lane) => {
       lane.innerHTML = '';
       const note = document.createElement('div');
-      note.className = 'note';
+      note.className = 'mock-note';
       lane.appendChild(note);
 
       const stopPercent = 20 + Math.random() * 75; // 20% to 75%
@@ -29,6 +32,15 @@ function LandingPage() {
         ease: 'power2.out',
         stagger: 0.5, // Animate one after another
         delay: 1,   // Wait a bit after load
+      });
+
+      gsap.to('.hero-cta-button', {
+        opacity: 1,
+        y: 0,
+        duration: 1.5,
+        ease: 'power2.out',
+        stagger: 0.5, // Animate one after another
+        delay: 1.6,   // Wait a bit after load
       });
 
       gsap.to('.hero-text-glow', {
@@ -77,7 +89,7 @@ function LandingPage() {
             particleCount={400}
             particleSpread={20}
             speed={0.2}
-            particleBaseSize={100}
+            particleBaseSize={10}
             moveParticlesOnHover={true}
             alphaParticles={false}
             disableRotation={false}
@@ -87,6 +99,11 @@ function LandingPage() {
         <div className="hero-text">
           <h1><span className="line" id='one'>Play through music,</span></h1>
           <h2><span className="line" id='two'>one note at a time.</span></h2>
+          <OpenModalButton
+            buttonText="Play Now"
+            modalComponent={<SignupFormModal />}
+            className="hero-cta-button"
+          />
         </div>
         <div className="mock-lanes-container">
           {[...Array(5)].map((_, i) => (

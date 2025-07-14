@@ -192,9 +192,6 @@
   padding: 10px 15px;
   border-radius: 20px;
   transition: 0.4s ease;
-
-  /* display: flex;
-  align-items: center; */
 }
 
 .signup-login-container .login-button:hover {

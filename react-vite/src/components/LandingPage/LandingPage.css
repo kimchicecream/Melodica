@@ -40,7 +40,7 @@
 
 .hero-text {
     position: absolute;
-    top: 25%;
+    top: 20%;
     text-align: center;
     color: rgb(205, 227, 255);
     font-size: 40px;
@@ -84,14 +84,14 @@
     background-color: rgb(12, 12, 19);
     border-left: 1px solid rgb(58, 58, 58);
     border-right: 1px solid rgb(58, 58, 58);
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
 
     transform-origin: bottom center;
     transform: rotateX(50deg);
 }
 
-.note {
+.mock-note {
     width: 60%;
     height: 20px;
     background-color: var(--primary);
@@ -132,4 +132,28 @@
     pointer-events: none;
     z-index: 0;
     opacity: 0;
+}
+
+.hero-cta-button {
+    padding: 15px 25px;
+    background-color: rgb(127, 144, 255);
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+
+
+
+    transition: 0.3s ease;
+    z-index: 300;
+    opacity: 0;
+    pointer-events: auto;
+}
+
+.hero-cta-button:hover {
+    background-color: rgb(223, 236, 255);
+    box-shadow: 0px 0px 20px 1px rgb(223, 236, 255);
+    color: black;
+    cursor: pointer;
+    z-index: 300;
 }
