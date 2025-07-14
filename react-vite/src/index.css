@@ -14,6 +14,8 @@ html, body {
 
 :root {
     --primary: rgb(127, 157, 255);
+    --primary-light: rgb(160, 182, 255);
+    --primary-lighter: rgb(200, 213, 255);
 }
 
 @font-face {
