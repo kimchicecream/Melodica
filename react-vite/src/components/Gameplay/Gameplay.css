@@ -546,14 +546,14 @@
 
 .end-game-modal .container .play-again:hover {
     background-color: rgba(255, 255, 255, 0.134);
-    color: aquamarine;
+    color: var(--primary-light);
 
     cursor: pointer;
 }
 
 .end-game-modal .container .back:hover {
     background-color: rgba(255, 255, 255, 0.134);
-    color: aquamarine;
+    color: var(--primary-light);
 
     cursor: pointer;
 }
@@ -579,13 +579,13 @@
 }
 
 .fullscreen-button {
-    all: unset;           /* remove default button styling (optional) */
+    all: unset;
     cursor: pointer;
     padding: 10px;
     color: #fff;
-    font-size: 24px;      /* icon size */
+    font-size: 24px;
     transition: color 0.3s ease;
-    border-radius: 10px;   /* optional: give it a circular hover background */
+    border-radius: 10px;
     display: flex;
     align-items: center;
     position: absolute;
