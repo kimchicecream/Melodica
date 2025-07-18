@@ -4,6 +4,8 @@
 
 ---
 
+<img width="1920" height="1080" alt="featured" src="https://github.com/user-attachments/assets/ca149bd5-823a-44eb-b98e-af3722a8a57c" />
+
 ## Gameplay Overview
 Players press the D, F, J, K, and L keys to match falling notes in hitzones across 5 different lanes.
 - Real-time visual feedback on note hits/misses
