@@ -89,7 +89,7 @@ function LandingPage() {
             particleCount={400}
             particleSpread={20}
             speed={0.2}
-            particleBaseSize={10}
+            particleBaseSize={100}
             moveParticlesOnHover={true}
             alphaParticles={false}
             disableRotation={false}
